@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BankEAuction</title>
+  <meta property="og:image" content="https://bolt.new/static/og_default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+  <style>
+    /* Aggressive Google Translate Hiding Strategy */
+    /* Hide the main Google Translate container while keeping it accessible for scripts */
+    #google_translate_element,
+    .goog-te-gadget,
+    .goog-te-gadget-simple,
+    .goog-te-banner-frame.skiptranslate,
+    .goog-te-banner-frame,
+    iframe.goog-te-banner-frame,
+    .VIpgJd-ZVi9od-ORHb-OEVmcd,
+    .VIpgJd-ZVi9od-ORHb,
+    .VIpgJd-ZVi9od-aXJMef-wHT5rb,
+    iframe[title="Language Translate Widget"],
+    body>div[style*="position: fixed; top: 0px"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      width: 0 !important;
+      border: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      position: absolute !important;
+      top: -9999px !important;
+      z-index: -9999 !important;
+    }
+
+    /* Force hide specific Google Translate components */
+    .goog-te-gadget-icon,
+    .goog-te-menu-value,
+    .goog-te-menu-frame,
+    .goog-tooltip,
+    #goog-gt-tt,
+    .goog-te-balloon-frame {
+      display: none !important;
+      visibility: hidden !important;
+      background-image: none !important;
+      background: none !important;
+      opacity: 0 !important;
+    }
+
+    /* Hide all images loaded by Google Translate, specifically targeting GIFs */
+    img[src*="google"],
+    img[src*="gstatic"],
+    img[src*="translate"],
+    img[src*="te_bk"],
+    img[src*="te_ctrl3"],
+    img[src*="loading"],
+    img[src*="cleardot"] {
+      display: none !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      height: 0 !important;
+      opacity: 0 !important;
+    }
+
+    /* Prevent body style shifts */
+    body {
+      top: 0px !important;
+      position: static !important;
+    }
+
+    html,
+    body {
+      margin-top: 0 !important;
+    }
+
+    /* Reset some specific Google styles that might leak */
+    .goog-text-highlight {
+      background: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,bn,pa,gu,te,ta,kn,mr,ml,as,or',
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
